@@ -1,0 +1,104 @@
+:root {
+  --blue: rgb(11, 130, 234);
+  --grey: rgb(203, 203, 203);
+}
+
+.todo {
+  max-width: 600px;
+  margin: 5em auto;
+}
+
+.todo-header {
+  border-radius: 5px 5px 0 0;
+  background-color: rgb(233, 233, 233);
+  padding: 1em;
+  border: 1px solid var(--grey);
+}
+
+.todo-contents {
+  border: 1px solid var(--grey);
+  border-top: none;
+  background-color: rgb(254, 254, 254);
+  padding: 1em;
+  border-radius: 0 0 5px 5px;
+}
+
+form {
+  display: flex;
+}
+
+form [type="text"] {
+  font-size: inherit;
+  flex-grow: 1;
+  padding: 0.5em;
+  border: 1px solid var(--grey);
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+}
+
+form .submit-todo {
+  padding: 0 1em;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  color: rgb(255, 255, 255);
+  background-color: var(--blue);
+  transition: 500ms ease;
+}
+
+form .submit-todo:hover {
+  cursor: pointer;
+  background-color: rgb(0, 111, 208);
+}
+
+.todo-items {
+  padding: 0;
+  margin: 1em 0;
+  list-style: none;
+  border: 1px solid var(--grey);
+  max-height: 400px;
+  overflow: auto;
+}
+
+.item {
+  padding: 1em;
+  display: flex;
+  align-items: center;
+}
+
+.item:nth-child(odd) {
+  background-color: rgb(238, 238, 238);
+}
+
+.item p {
+  flex-grow: 1;
+  margin: 0 0.7em;
+}
+
+.item button {
+  background: linear-gradient(#0000, rgb(0 0 0/20%)) top/100% 800%;
+  margin-left: 0.5em;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 0.5em 0.5em;
+  transition: 500ms ease;
+}
+
+.item button:hover {
+  cursor: pointer;
+  background-position: bottom;
+}
+
+.item .edit {
+  background-color: rgb(0, 145, 0);
+}
+
+.item .delete {
+  background-color: rgb(220, 0, 0);
+}
+
+.complete {
+  color: rgb(126, 126, 126);
+  text-decoration: line-through;
+  font-style: italic;
+}

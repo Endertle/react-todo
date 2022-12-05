@@ -1,0 +1,51 @@
+.edit-popup {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 5px;
+  background-color: rgb(254, 254, 254);
+  padding: 1.5em 2em;
+  z-index: 200;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -150%);
+}
+
+.btn {
+  background: linear-gradient(#0000, rgb(0 0 0/20%)) top/100% 800%;
+  color: white;
+  transition: 500ms ease;
+  border: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-position: bottom;
+}
+
+.close-edit {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border-radius: 20px;
+  padding: 0.5em 0.8em;
+  color: white;
+  background-color: rgb(220, 0, 0);
+}
+
+.save-edit {
+  background-color: rgb(0, 145, 0);
+  border-radius: 0 5px 5px 0;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgb(0 0 0/50%);
+  color: white;
+  z-index: 1;
+}
+
+.edit-popup > h2 {
+  margin-bottom: 0.5em;
+}
